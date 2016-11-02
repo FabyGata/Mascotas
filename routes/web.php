@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource('pet', 'PetsController');
+
+Route::resource('owner' , 'OwnersController');
+
+Route::resource('vaccine' , 'VaccinesController');
+
+Route::resource('certificate' , 'CertificatesController');
