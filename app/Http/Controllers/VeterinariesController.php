@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Veterinary;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class VeterinarysController extends Controller
+class VeterinariesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class VeterinarysController extends Controller
      */
     public function index()
     {
-        return view('veterinary.index');
+        return view('veterinary.index' , ['veterinaries' => Veterinary::all()]);
     }
 
     /**
@@ -25,7 +25,7 @@ class VeterinarysController extends Controller
      */
     public function create()
     {
-        //
+        return view('veterinary.create');
     }
 
     /**
@@ -36,7 +36,13 @@ class VeterinarysController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $veterinary= new Veterinary();
+        $veterinary->name=$request->name;
+        $veterinary->address=$request->address;
+        $veterinary->doctor_name=$request->doctor_name;
+        $veterinary->phone=$request->phone;
+        $veterinary->save();
+        return $this->index();
     }
 
     /**

@@ -55,7 +55,7 @@ class SchemeCreation extends Migration
 
         //veterinary table
 
-        Schema::create('veterinary', function(Blueprint $table){
+        Schema::create('veterinaries', function(Blueprint $table){
             $table->increments('id');
             $table->string('name');
             $table->string('address');
@@ -72,7 +72,7 @@ class SchemeCreation extends Migration
             $table->integer('vaccine_id')->unsigned();
             $table->foreign('vaccine_id')->references('id')->on('vaccines');
             $table->integer('veterinary_id')->unsigned();
-            $table->foreign('veterinary_id')->references('id')->on('veterinary');
+            $table->foreign('veterinary_id')->references('id')->on('veterinaries');
             $table->timestamps();
         });
     }
@@ -84,11 +84,10 @@ class SchemeCreation extends Migration
      */
     public function down()
     {
-        Schema::drop('certificate');
-        Schema::drop('veterinary');
+        Schema::drop('certificates');
+        Schema::drop('veterinaries');
         Schema::drop('vaccines');
         Schema::drop('pets');
         Schema::drop('owners');
-
     }
 }

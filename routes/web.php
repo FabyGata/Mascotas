@@ -24,3 +24,5 @@ Route::resource('owner' , 'OwnersController');
 Route::resource('vaccine' , 'VaccinesController');
 
 Route::resource('certificate' , 'CertificatesController');
+
+Route::resource('veterinary' , 'VeterinariesController');
