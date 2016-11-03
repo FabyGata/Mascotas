@@ -32,6 +32,7 @@ class SchemeCreation extends Migration
             $table->string('name');
             $table->string('species');
             $table->string('race');
+            $table->string('image');
             $table->integer('birthdate');
             $table->string('weight');
             $table->string('gender');
@@ -44,7 +45,6 @@ class SchemeCreation extends Migration
         });
 
         //vaccine table
-
         Schema::create('vaccines', function(Blueprint $table){
             $table->increments('id');
             $table->string('name');
@@ -54,7 +54,6 @@ class SchemeCreation extends Migration
         });
 
         //veterinary table
-
         Schema::create('veterinaries', function(Blueprint $table){
             $table->increments('id');
             $table->string('name');

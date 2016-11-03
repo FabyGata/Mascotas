@@ -45,6 +45,11 @@ class PetsController extends Controller
         $pet->gender=$request->gender;
         $pet->color=$request->color;
         $pet->owner_id = $request->owner_id;
+
+        $imageName = time().'.'.$request->image->getClientOriginalExtension();
+        $request->image->move(public_path('images'), $imageName);
+        $pet->image = '/images/' . $imageName;
+
         $pet->save();
 
         $certificate=new Certificate();

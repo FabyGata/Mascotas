@@ -21,6 +21,7 @@
                     <th>Raza</th>
                     <th>Genero</th>
                     <th>Color</th>
+                    <th>:v</th>
                     </thead>
 
                     <tbody>
@@ -42,6 +43,10 @@
                         {{ $pet->color}}
                     </td>
 
+                <td>
+                    <img style="width: 200px" src="{{$pet->image}}">
+
+                </td>
 
                 </tr>
             @endforeach
