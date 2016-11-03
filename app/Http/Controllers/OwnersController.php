@@ -39,7 +39,7 @@ class OwnersController extends Controller
     {
         $owner= new Owner();
         $owner->name=$request->name;
-        $owner->adress=$request->adress;
+        $owner->address=$request->address;
         $owner->birthdate=$request->birthdate;
         $owner->save();
         return $this->index();

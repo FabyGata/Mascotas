@@ -29,15 +29,15 @@
 
 
 
-                            <div class="form-group{{ $errors->has('adress') ? ' has-error' : '' }}">
+                            <div class="form-group{{ $errors->has('address') ? ' has-error' : '' }}">
                                 <label for="name" class="col-md-4 control-label">Dirección</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="adress" value="{{ old('adress') }}" required autofocus>
+                                    <input id="name" type="text" class="form-control" name="address" value="{{ old('address') }}" required autofocus>
 
-                                    @if ($errors->has('adress'))
+                                    @if ($errors->has('address'))
                                         <span class="help-block">
-                                        <strong>{{ $errors->first('adress') }}</strong>
+                                        <strong>{{ $errors->first('address') }}</strong>
                                     </span>
                                     @endif
                                 </div>

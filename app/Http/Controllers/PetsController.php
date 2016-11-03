@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Certificate;
 use App\Owner;
 use App\Pet;
 use Illuminate\Http\Request;
@@ -45,6 +46,10 @@ class PetsController extends Controller
         $pet->color=$request->color;
         $pet->owner_id = $request->owner_id;
         $pet->save();
+
+        $certificate=new Certificate();
+        
+
         return $this->index();
     }
 

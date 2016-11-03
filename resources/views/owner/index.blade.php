@@ -30,7 +30,7 @@
                                         </td>
 
                                         <td>
-                                            {{ $owner->adress}}
+                                            {{ $owner->address}}
                                         </td>
 
                                         <td>
