@@ -19,7 +19,7 @@
                                 <thead>
                                 <th>Nombre de la Vacuna</th>
                                 <th>Dosis</th>
-                                <th>Fecha de la Primera Vacuna</th>
+                                <th>Laboratorio</th>
                                 </thead>
 
                                 <tbody>
@@ -34,7 +34,7 @@
                                         </td>
 
                                         <td>
-                                            {{ $vaccine->date_first_vaccine}}
+                                            {{ $vaccine->brand}}
                                         </td>
 
                                     </tr>

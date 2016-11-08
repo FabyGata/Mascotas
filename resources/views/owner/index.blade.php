@@ -37,6 +37,22 @@
                                             {{ $owner->birthdate}}
                                         </td>
 
+                                        <td class="table-text">
+                                            {{ $owner-> ci }}
+                                        </td>
+
+                                        <td class="table-text">
+                                            {{ $owner-> phone }}
+                                        </td>
+
+                                        <td class="table-text">
+                                            {{ $owner-> email }}
+                                        </td>
+
+                                        <td class="table-text">
+                                            {{ $owner-> housetype }}
+                                        </td>
+
                                     </tr>
                                 @endforeach
                                 </tbody>

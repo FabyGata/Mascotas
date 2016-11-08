@@ -21,7 +21,7 @@
                     <th>Raza</th>
                     <th>Genero</th>
                     <th>Color</th>
-                    <th>:v</th>
+                    <th>Fotografía</th>
                     </thead>
 
                     <tbody>

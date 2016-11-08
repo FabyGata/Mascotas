@@ -60,6 +60,63 @@
                             </div>
 
 
+                            <div class="form-group{{ $errors->has('ci') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Carnet de Identidad</label>
+
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="ci" value="{{ old('ci') }}" required autofocus>
+
+                                    @if ($errors->has('ci'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('ci') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Teléfono</label>
+
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="phone" value="{{ old('phone') }}" required autofocus>
+
+                                    @if ($errors->has('phone'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Correo Electronico</label>
+
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+
+                                    @if ($errors->has('email'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('housetype') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Tipo de vivienda</label>
+
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="housetype" value="{{ old('housetype') }}" required autofocus>
+
+                                    @if ($errors->has('housetype'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('housetype') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">

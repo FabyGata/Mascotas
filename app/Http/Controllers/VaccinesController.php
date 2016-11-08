@@ -40,7 +40,7 @@ class VaccinesController extends Controller
         $vaccine= new Vaccine();
         $vaccine->name=$request->name;
         $vaccine->dose=$request->dose;
-        $vaccine->date_first_dose=$request->date_first_dose;
+        $vaccine->brand=$request->brand;
         $vaccine->save();
         return $this->index();
     }

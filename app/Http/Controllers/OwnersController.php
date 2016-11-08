@@ -41,6 +41,10 @@ class OwnersController extends Controller
         $owner->name=$request->name;
         $owner->address=$request->address;
         $owner->birthdate=$request->birthdate;
+        $owner->ci=$request->ci;
+        $owner->phone=$request->phone;
+        $owner->email=$request->email;
+        $owner->housetype=$request->housetype;
         $owner->save();
         return $this->index();
     }

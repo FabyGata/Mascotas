@@ -10,10 +10,13 @@
                     <a href="/pet">Mascotas Registradas</a>
                 </div>
                 <div class="panel-body">
-                    <a href="/owners">Dueños de mascotas</a>
+                    <a href="/owner">Dueños de mascotas</a>
                 </div>
                 <div class="panel-body">
                     <a href="/vaccine">Lista de vacunas</a>
+                </div>
+                <div class="panel-body">
+                    <a href="/veterinary">Veterinarias</a>
                 </div>
             </div>
         </div>

@@ -45,15 +45,15 @@
 
 
 
-                            <div class="form-group{{ $errors->has('date_first_dose') ? ' has-error' : '' }}">
-                                <label for="name" class="col-md-4 control-label">Fecha de la Primera Dosis</label>
+                            <div class="form-group{{ $errors->has('brand') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Laboratorio</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="date_first_dose" value="{{ old('date_first_dose') }}" required autofocus>
+                                    <input id="name" type="text" class="form-control" name="brand" value="{{ old('brand') }}" required autofocus>
 
-                                    @if ($errors->has('date_first_dose'))
+                                    @if ($errors->has('brand'))
                                         <span class="help-block">
-                                        <strong>{{ $errors->first('date_first_dose') }}</strong>
+                                        <strong>{{ $errors->first('brand') }}</strong>
                                     </span>
                                     @endif
                                 </div>
