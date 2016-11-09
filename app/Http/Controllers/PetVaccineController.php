@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Certificate;
-use App\Owner;
-use App\Pet;
+use App\PetVaccine;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class PetsController extends Controller
+class PetVaccineController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +16,7 @@ class PetsController extends Controller
      */
     public function index()
     {
-        return view ('pet.index' , ['pets' => Pet::all()]);
+        //
     }
 
     /**
@@ -28,7 +26,7 @@ class PetsController extends Controller
      */
     public function create()
     {
-        return view('pet.create' , ['owners' => Owner::all()]);
+        //
     }
 
     /**
@@ -39,19 +37,10 @@ class PetsController extends Controller
      */
     public function store(Request $request)
     {
-       $pet= new Pet();
-        $pet->name=$request->name;
-        $pet->race=$request->race;
-        $pet->gender=$request->gender;
-        $pet->color=$request->color;
-        $pet->owner_id = $request->owner_id;
-        $pet->veterinary_id = $request->veterinary_id;
-
-        $imageName = time().'.'.$request->image->getClientOriginalExtension();
-        $request->image->move(public_path('images'), $imageName);
-        $pet->image = '/images/' . $imageName;
-
-        $pet->save();
+        $pet_vaccine=new PetVaccine();
+        $pet_vaccine->pet_id = $request-> pet_id;
+        $pet_vaccine->vaccine_id = $request-> vaccine_id;
+        $pet_vaccine->save();
         return $this->index();
     }
 

@@ -26,3 +26,5 @@ Route::resource('vaccine' , 'VaccinesController');
 Route::resource('certificate' , 'CertificatesController');
 
 Route::resource('veterinary' , 'VeterinariesController');
+
+Route::resource('pet_vaccine' , 'PetVaccineController');

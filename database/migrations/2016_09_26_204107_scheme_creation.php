@@ -13,6 +13,17 @@ class SchemeCreation extends Migration
      */
     public function up()
     {
+
+        //veterinary table
+        Schema::create('veterinaries', function(Blueprint $table){
+            $table->increments('id');
+            $table->string('name');
+            $table->string('address');
+            $table->string('doctor_name');
+            $table->string('phone');
+            $table->timestamps();
+        });
+
         //owner table
         Schema::create('owners', function(Blueprint $table){
             $table->increments('id');
@@ -41,6 +52,8 @@ class SchemeCreation extends Migration
             $table->string('description');
             $table->integer('owner_id')->unsigned();
             $table->foreign('owner_id')->references('id')->on('owners');
+            $table->integer('veterinary_id')->unsigned();
+            $table->foreign('veterinary_id')->references('id')->on('veterinaries');
             $table->timestamps();
         });
 
@@ -53,27 +66,16 @@ class SchemeCreation extends Migration
             $table->timestamps();
         });
 
-        //veterinary table
-        Schema::create('veterinaries', function(Blueprint $table){
-            $table->increments('id');
-            $table->string('name');
-            $table->string('address');
-            $table->string('doctor_name');
-            $table->string('phone');
-            $table->timestamps();
-        });
-
-        //certificate table
-        Schema::create('certificates', function(Blueprint $table){
+        
+        Schema::create('pet_vaccines', function(Blueprint $table){
             $table->increments('id');
             $table->integer('pet_id')->unsigned();
             $table->foreign('pet_id')->references('id')->on('pets');
             $table->integer('vaccine_id')->unsigned();
             $table->foreign('vaccine_id')->references('id')->on('vaccines');
-            $table->integer('veterinary_id')->unsigned();
-            $table->foreign('veterinary_id')->references('id')->on('veterinaries');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -83,10 +85,10 @@ class SchemeCreation extends Migration
      */
     public function down()
     {
-        Schema::drop('certificates');
-        Schema::drop('veterinaries');
+        Schema::drop('pet_vaccines');
         Schema::drop('vaccines');
         Schema::drop('pets');
         Schema::drop('owners');
+        Schema::drop('veterinaries');
     }
 }
