@@ -75,14 +75,22 @@
                             </div>
                             <div class="form-group">
                                 <label for="name" class="col-md-4 control-label">Seleccionar Dueño</label>
-
                                 <div class="col-md-6">
                                     <select name="owner_id"  class="form-control">
                                         @foreach($owners as $owner)
                                             <option value={{ $owner->id}}>{{ $owner->name}}</option>
                                        @endforeach
                                     </select>
-
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="col-md-4 control-label">Seleccionar Veterinario</label>
+                                <div class="col-md-6">
+                                    <select name="veterinary_id"  class="form-control">
+                                        @foreach($veterinaries as $veterinary)
+                                            <option value={{ $veterinary->id}}>{{ $veterinary->name}}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">

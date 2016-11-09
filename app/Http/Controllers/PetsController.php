@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Certificate;
 use App\Owner;
 use App\Pet;
+use App\Veterinary;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -28,7 +29,10 @@ class PetsController extends Controller
      */
     public function create()
     {
-        return view('pet.create' , ['owners' => Owner::all()]);
+        return view('pet.create' , [
+            'owners' => Owner::all(),
+            'veterinaries' => Veterinary::all()
+        ]);
     }
 
     /**
