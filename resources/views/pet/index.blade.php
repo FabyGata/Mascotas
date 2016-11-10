@@ -27,30 +27,30 @@
 
                     <tbody>
                     @foreach ($pets as $pet)
-            <tr>
-                <td class="table-text">
-                    {{ $pet-> name }}
-                    </td>
+                        <tr>
+                            <td class="table-text" >
+                                <a href="/pet/{{$pet->id}}">{{ $pet-> name }}</a>
+                            </td>
 
-                    <td>
-                        {{ $pet->race}}
-                    </td>
+                            <td>
+                                {{ $pet->race}}
+                            </td>
 
-                    <td>
-                        {{ $pet->gender}}
-                    </td>
+                            <td>
+                                {{ $pet->gender}}
+                            </td>
 
-                    <td>
-                        {{ $pet->color}}
-                    </td>
+                            <td>
+                                {{ $pet->color}}
+                            </td>
 
-                <td>
-                    <img style="width: 200px" src="{{$pet->image}}">
+                            <td>
+                                <img style="width: 200px" src="{{$pet->image}}">
 
-                </td>
+                            </td>
 
-                </tr>
-            @endforeach
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

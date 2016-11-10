@@ -68,7 +68,9 @@ class PetsController extends Controller
     public function show($id)
     {
        // return Pet::find($id)->owner;
-          return view('pet.show', ['pet' => Pet::find($id)]);
+          return view('pet.show', ['pet' => Pet::find($id)]
+
+              );
     }
 
     /**

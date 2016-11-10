@@ -56,25 +56,14 @@
                 <img style="width: 200px" src="{{$pet->image}}"><br>
             </address>
 
-
-
-
-
-
-
-
-
-
-
         </div>
         </div>
     </div>
 
 
-
 <div class="form-group">
     <div class="col-sm-6">
-        <a type="submit" class="button1" href="vaccine/create">
+        <a type="submit" class="button1" href="vaccine_create">
             Añadir Vacuna
         </a>
     </div>
