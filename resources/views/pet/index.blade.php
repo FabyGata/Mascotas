@@ -2,6 +2,7 @@
 
 @section('content')
 
+
     <div class="wrapper">
         <div class="col2 marg_right1">
             <h2>Mascotas Registradas</h2>
@@ -66,7 +67,7 @@
 
         </div>
     </div>
-</div>
+    </div>
 
 @endsection
 
