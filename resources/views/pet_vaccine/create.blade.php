@@ -10,14 +10,27 @@
                         <form class="form-horizontal" role="form" method="POST" action="{{ route('pet_vaccine.store')}}" enctype="multipart/form-data" >
                             {{ csrf_field() }}
 
-                            <div class="col-md-6">
-                                <select name="vaccine_id"  class="form-control">
-                                    @foreach($vaccines as $vaccine)
-                                        <option value={{ $vaccine->id}}>{{ $vaccine->name}}</option>
-                                    @endforeach
-                                </select>
+                            <div class="form-group">
+                                <label for="name" class="col-md-4 control-label">Seleccionar Vacuna</label>
+                                <div class="col-md-6">
+                                    <select name="vaccine_id"  class="form-control">
+                                        @foreach($vaccines as $vaccine)
+                                            <option value={{ $vaccine->id}}>{{ $vaccine->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
                             </div>
 
+                            <div class="form-group">
+                                <label for="name" class="col-md-4 control-label">Seleccionar Masacota</label>
+                                <div class="col-md-6">
+                                    <select name="pet_id"  class="form-control">
+                                        @foreach($pets as $pet)
+                                            <option value={{ $pet->id}}>{{ $pet->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">

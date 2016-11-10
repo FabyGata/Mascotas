@@ -18,6 +18,9 @@
                 <div class="panel-body">
                     <a href="/veterinary">Veterinarias</a>
                 </div>
+                <div class="panel-body">
+                    <a href="/pet_vaccine/create">Añadir vacuna a mascota</a>
+                </div>
             </div>
         </div>
     </div>
