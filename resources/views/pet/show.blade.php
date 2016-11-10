@@ -55,21 +55,9 @@
                 <strong>Imagen</strong><br>
                 <img style="width: 200px" src="{{$pet->image}}"><br>
             </address>
-
-
-
-
-
-
-
-
-
-
-
         </div>
         </div>
     </div>
-
 
 
 <div class="form-group">

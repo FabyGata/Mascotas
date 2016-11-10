@@ -27,8 +27,8 @@
                     <tbody>
                     @foreach ($pets as $pet)
             <tr>
-                <td class="table-text">
-                    {{ $pet-> name }}
+                <td class="table-text" >
+                   <a href="/pet/{{$pet->id}}">{{ $pet-> name }}</a>
                     </td>
 
                     <td>
