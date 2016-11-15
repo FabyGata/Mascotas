@@ -28,3 +28,5 @@ Route::resource('certificate' , 'CertificatesController');
 Route::resource('veterinary' , 'VeterinariesController');
 
 Route::resource('pet_vaccine' , 'PetVaccineController');
+
+Route::get('/print_pet_certificate', 'PetsController@printPetCertificate');

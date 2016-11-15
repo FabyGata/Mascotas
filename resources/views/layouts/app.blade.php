@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/mystyle.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -24,7 +25,8 @@
 <body>
 
     <div id="header">
-        <a href="/" id="logo"><img src="/template_images/logo.gif" width="310" height="114" alt="" title=""></a>
+        <a href="/" id="logo"><img src="/template_images/logo.png" width="310" height="114" alt="" title=""></a>
+
         <ul class="navigation">
             <li><a href="/">Home</a></li>
             <li><a href="/pet">Mascotas</a></li>
@@ -93,46 +95,41 @@
 
     @yield('content')
 
-    <div id="footer">
-        <div class="section">
-            <ul>
-                <li>
-                    <img src="/template_images/friendly-pets.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
-                    <h2><a href="index.html">Friendly Pets</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diam nonummy nib. <a class="more" href="index.html">Read More</a>
-                    </p>
-                </li>
-                <li>
-                    <img src="/template_images/pet-lover2.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
-                    <h2><a href="index.html">How dangerous are they</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, cons ectetuer adepis cing, sed diam euis. <a class="more" href="index.html">Read More</a>
-                    </p>
-                </li>
-                <li>
-                    <img src="/template_images/healthy-dog.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
-                    <h2><a href="index.html">Keep them healthy</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diam nonu mmy. <a class="more" href="index.html">Read More</a>
-                    </p>
-                </li>
-                <li>
+    {{--<div id="footer">--}}
+        {{--<div class="section">--}}
+            {{--<ul>--}}
+                {{--<li>--}}
+                    {{--<img src="/template_images/friendly-pets.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">--}}
 
-                    <h2><a href="index.html">Love...love...love...pets</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diameusim. <a class="more" href="index.html">Read More</a>
-                    </p>
-                    <img src="/template_images/pet-lover.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
-                </li>
-            </ul>
-        </div>
-        <div id="footnote">
-            <div class="section">
-                &copy; 2011 <a href="index.html">Petshop</a>. All Rights Reserved.
-            </div>
-        </div>
-    </div>
+                   {{--<!-- <p>--}}
+                        {{--Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diam nonummy nib. <a class="more" href="index.html">Read More</a>--}}
+                    {{--</p>-->--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                   {{--<img src="/template_images/pet-lover2.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">--}}
+
+                 {{--<!--   <p>--}}
+                        {{--Lorem ipsum dolor sit amet, cons ectetuer adepis cing, sed diam euis. <a class="more" href="index.html">Read More</a>--}}
+                    {{--</p>-->--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                   {{--<img src="/template_images/healthy-dog.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">--}}
+
+                    {{--<!--  <p>--}}
+                         {{--Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diam nonu mmy. <a class="more" href="index.html">Read More</a>--}}
+                     {{--</p>-->--}}
+                {{--</li>--}}
+                {{--<li>--}}
+
+                    {{--<!--  <p>--}}
+                          {{--Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diameusim. <a class="more" href="index.html">Read More</a>--}}
+                      {{--</p>-->--}}
+                      {{--<img src="/template_images/pet-lover.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">--}}
+
+                {{--</li>--}}
+            {{--</ul>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 
     <!-- Scripts -->
     {{--<script src="/js/app.js"></script>--}}

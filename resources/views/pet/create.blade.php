@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Registrar Mascota</div>
+                    <div class="panel-heading " align="center">Registrar Mascota</div>
                     <div class="panel-body">
                         <form class="form-horizontal" role="form" method="POST" action="{{ route('pet.store')}}" enctype="multipart/form-data" >
                             {{ csrf_field() }}
@@ -26,8 +26,46 @@
                                 </div>
                             </div>
 
+                            <div class="form-group{{ $errors->has('species') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Especie</label>
 
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="species" value="{{ old('species') }}" required autofocus>
 
+                                    @if ($errors->has('species'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('species') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('birthdate') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Edad en años</label>
+
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="birthdate" value="{{ old('birthdate') }}" required autofocus>
+
+                                    @if ($errors->has('birthdate'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('birthdate') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="form-group{{ $errors->has('weight') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Peso en Kilogramos</label>
+
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="weight" value="{{ old('weight') }}" required autofocus>
+
+                                    @if ($errors->has('weight'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('weight') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
 
                             <div class="form-group{{ $errors->has('race') ? ' has-error' : '' }}">
                                 <label for="name" class="col-md-4 control-label">Raza</label>
@@ -42,7 +80,6 @@
                                     @endif
                                 </div>
                             </div>
-
 
 
                             <div class="form-group{{ $errors->has('gender') ? ' has-error' : '' }}">
@@ -73,6 +110,43 @@
                                     @endif
                                 </div>
                             </div>
+
+                            <div class="form-group{{ $errors->has('sterilized') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Esterilizado</label>
+
+
+                                <label class="radio-inline">
+                                    <input type="radio" name="sterilized" id="inlineRadio1" value="1"> Si
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="sterilized" id="inlineRadio2" value="0"> No
+                                </label>
+
+
+                                <!--<div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="sterilized" value="{{ old('sterilized') }}" required autofocus>
+                                </div>-->
+                            </div>
+
+
+                            <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
+
+                                    <label for="name" type="text" class="col-md-4 control-label">Descripción Caracteristica</label>
+
+                                    <div class="col-md-6">
+
+                                       <!-- <input id="name" type="text" class="form-control" name="description" value="{{ old('description') }}" required autofocus>-->
+                                        <textarea class="form-control" rows="4" name="description" value="{{ old('description')}}">
+                                        @if ($errors->has('description'))
+                                            <span class="help-block">
+                                            <strong>{{ $errors->first('description') }}</strong>
+                                        </span>
+                                        @endif
+                                        </textarea>
+                                    </div>
+
+                            </div>
+
                             <div class="form-group">
                                 <label for="name" class="col-md-4 control-label">Seleccionar Dueño</label>
                                 <div class="col-md-6">

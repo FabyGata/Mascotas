@@ -1,0 +1,39 @@
+.wrapper{
+    padding: 60px;
+}
+
+.pet-photo {
+    padding: 15px;
+}
+
+.pet-photo img {
+    width: 100%;
+}
+
+.pet-info {
+
+}
+
+.pet-info .form-inline {
+    font-size: 22px;
+}
+
+.pet-index {
+
+}
+
+.pet-item {
+    height: 300px;
+}
+
+.pet-item img {
+
+}
+
+.pet-item h4 {
+    text-align: center;
+}
+
+.pet-image {
+
+}

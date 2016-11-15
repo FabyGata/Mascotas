@@ -15,12 +15,9 @@ class Pet extends Model
     public function veterinary(){
         return $this->belongsTo('App\Veterinary');
     }
-
-    public function vaccine(){
-        return $this->belongsTo('App\Vaccine');
-    }
-    public function pet_vaccine(){
-        return $this->belongsTo('App\PetVaccine');
+    
+    public function vaccines(){
+        return $this->belongsToMany('App\Vaccine', 'pet_vaccines');
     }
     
     
