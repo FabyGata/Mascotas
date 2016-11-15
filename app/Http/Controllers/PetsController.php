@@ -114,8 +114,11 @@ class PetsController extends Controller
 
 
     public function printPetCertificate() {
-//        return $this->pet;
+//
 
+
+
+//
         $pet_id = $_GET['pet_id'];
         $pet = Pet::find($pet_id);
 
@@ -123,11 +126,34 @@ class PetsController extends Controller
         $pdf::AliasNbPages();
         $pdf::AddPage();
         $pdf::SetFont('Times','',12);
-        for($i=1;$i<=4;$i++)
-            $pdf::Cell(0,10,'Printing line number '.$i,0,1);
 
-        $pdf::Cell(0,10,'Printing line number ' . $pet->name,0,1);
+        // Logo
+        //$pdf::Image('localhost:8000?template_images?logo.png',10,6,30);
+//        $pdf::Image('http://localhost:8000/template_images/logo',60,30,90,0,'PNG');
+//        // Arial bold 15
+//        $this::SetFont('Arial','B',15);
+//        // Move to the right
+//        $this::Cell(80);
+//        // Title
+//        $this::Cell(30,10,'Title',1,0,'C');
+//        // Line break
+//        $this::Ln(20);
+//
 
+        //for($i=1;$i<=4;$i++)
+           //$pdf::Cell(0,10,'Printing line number '.$i,0,1);
+
+        //$pdf::Cell(0,10,'Printing line number ' . $pet->name,0,1);
+
+        $pdf::Cell(0,10,'Nombre de la Mascota: ' . $pet->name,0,1);
+        $pdf::Cell(0,10,'Especie: ' . $pet->species,0,1);
+        $pdf::Cell(0,10,'Raza: ' . $pet->race,0,1);
+        $pdf::Cell(0,10,'Edad: ' . $pet->birthdate,0,1);
+        $pdf::Cell(0,10,'Genero: ' . $pet->gender,0,1);
+        $pdf::Cell(0,10,'Peso: ' . $pet->weight,0,1);
+        $pdf::Cell(0,10,'Color: ' . $pet->color,0,1);
+        $pdf::Cell(0,10,'Esterlizado: ' . $pet->sterilized,0,1);
+        $pdf::Cell(0,10,'Descripcion: ' . $pet->description,0,1);
         $pdf::Output();
         exit;
     }
@@ -135,19 +161,20 @@ class PetsController extends Controller
 
 class PDF extends Fpdf
 {
+
 // Page header
     function Header()
     {
-        // Logo
-        $this->Image('logo.png',10,6,30);
-        // Arial bold 15
-        $this->SetFont('Arial','B',15);
-        // Move to the right
-        $this->Cell(80);
-        // Title
-        $this->Cell(30,10,'Title',1,0,'C');
-        // Line break
-        $this->Ln(20);
+//        // Logo
+//        $this->Image('localhost:8000/template_images/logo.png',10,6,30);
+//        // Arial bold 15
+//        $this->SetFont('Arial','B',15);
+//        // Move to the right
+//        $this->Cell(80);
+//        // Title
+//        $this->Cell(30,10,'Title',1,0,'C');
+//        // Line break
+//        $this->Ln(20);
     }
 
 // Page footer

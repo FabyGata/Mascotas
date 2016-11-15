@@ -62,9 +62,9 @@
                 @endif
 
                 <div class="form-group">
-                    <div class="col-sm-6">
+                    <div class="col-lg-12">
                         <a type="submit" class="button1" href="owner/create">
-                            Añadir Dueño
+                            <button type="button" class="btn btn-default btn-lg">Agregar Dueño</button>
                         </a>
                     </div>
                 </div>

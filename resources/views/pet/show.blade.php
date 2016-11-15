@@ -65,8 +65,10 @@
                     </tbody>
                 </table>
                 </div>
-                 <div>
-                     <a href="/print_pet_certificate?pet_id={{$pet->id}}">Imprimir Certificado</a>
+                 <div class="col-lg-12">
+                         <a type="submit" class="button1" href="/print_pet_certificate?pet_id={{$pet->id}}">
+                             <button type="button" class="btn btn-default btn-lg">Imprimir Certificado</button>
+                         </a>
                  </div>
             </div>
         </div>
