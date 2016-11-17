@@ -53,7 +53,7 @@
                 <div class="form-group">
                     <div class="col-sm-6">
                         <a type="submit" class="button1" href="veterinary/create">
-                            Añadir Veterinaria
+                            <button type="button" class="btn btn-default btn-lg">Agregar Veterinaria</button>
                         </a>
                     </div>
                 </div>

@@ -40,7 +40,6 @@
             <li><a href="/vaccine">Vacunas</a></li>
             <li><a href="/veterinary">Veterinarias</a></li>
             {{--<li><a href="/pet_vaccine/create">Añadir vacuna a mascota</a></li>--}}
-
         </ul>
         <ul class="nav navbar-nav navbar-right">
 
