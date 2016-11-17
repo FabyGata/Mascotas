@@ -37,3 +37,17 @@
 .pet-image {
 
 }
+
+#header ul.nav li{
+    color: black;
+    font-size: 18px;
+}
+
+#header ul.nav li a{
+    color: black;
+    font-size: 18px;
+}
+
+#logo {
+    padding: 0;
+}
