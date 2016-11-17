@@ -12,13 +12,13 @@
             <ul>
 
                   <!--  <a href="index.html"><img src="/template_images/puppy.jpg"  alt="Pet Shop" title="Pet Shop"></a>-->
-                    <h1>Cédula Animal</h1>
+                    <h1>Registro Animal</h1>
                     <p>Cuando uno adquiere una mascota, ya sea porque se la han regalado de cachorro, la ha comprado o
                         simplemente la ha acogido de adulto rescatándola de un refugio,debe inmediatamente documentarla,
                         vamos, lo que podríamos decir “sacar su carné de identidad”. Este documento es al que denominamos
                         CERTIFICADO OFICIAL DE IDENTIFICACION ANIMAL.
                     </p>
-                <h3>Para que sirve</h3>
+                <h3>Para qué sirve</h3>
                 <p>Sabemos que a medida que va creciendo el número de propietarios de mascotas, también crece la necesidad de organizar,
                     legislar y tener bien estudiados todos las posibles situaciones que nos podamos encontrar con ellas: viajes,
                     salidas por un parque, perros abandonados, perros que agreden al nuestro y se van.

@@ -20,6 +20,10 @@
                                 <th>Nombre</th>
                                 <th>Dirección</th>
                                 <th>Edad</th>
+                                <th>Carnet de Identidad</th>
+                                <th>Teléfono/Celular</th>
+                                <th>Correo Electrónico</th>
+                                <th>Tipo de Vivienda</th>
                                 </thead>
 
                                 <tbody>
@@ -28,31 +32,24 @@
                                         <td class="table-text">
                                             {{ $owner-> name }}
                                         </td>
-
                                         <td>
                                             {{ $owner->address}}
                                         </td>
-
                                         <td>
                                             {{ $owner->birthdate}}
                                         </td>
-
                                         <td class="table-text">
                                             {{ $owner-> ci }}
                                         </td>
-
                                         <td class="table-text">
                                             {{ $owner-> phone }}
                                         </td>
-
                                         <td class="table-text">
                                             {{ $owner-> email }}
                                         </td>
-
                                         <td class="table-text">
                                             {{ $owner-> housetype }}
                                         </td>
-
                                     </tr>
                                 @endforeach
                                 </tbody>
