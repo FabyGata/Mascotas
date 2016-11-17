@@ -25,13 +25,6 @@
 <body>
 
     <div id="header">
-
-        {{--Loggin Registrer--}}
-        {{--<ul class="nav navbar-nav navbar-right">--}}
-
-        {{--</ul>--}}
-
-
         <ul class="nav navbar-nav navbar-left">
             <li><a href="/" id="logo"><img src="/template_images/logo.png" width="310" height="100" alt="" title=""></a></li>
             {{--<li><a href="/">Home</a></li>--}}
