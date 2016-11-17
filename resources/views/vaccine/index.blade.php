@@ -48,7 +48,7 @@
                 <div class="form-group">
                     <div class="col-sm-6">
                         <a type="submit" class="button1" href="vaccine/create">
-                            Añadir Vacuna
+                            <button type="button" class="btn btn-default btn-lg">Agregar Vacuna</button>
                         </a>
                     </div>
                 </div>
